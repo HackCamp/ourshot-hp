@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
-  <body>d
+  <body>
     <header class="header">
       <div class="wrapper">
         <div class="header-title">
@@ -24,7 +24,7 @@
         <!-- #TODO : TOP画面は背景透明にする -->
         <div class="header-right">
           <ul class="nav" id="top-navigation">
-            <li class="active"><a href="#top">Top</a></li>
+            <li><a href="#top">Top</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#case">Case</a></li>
@@ -36,12 +36,13 @@
     </header>
     <section id="top">
         <div class="pattern"></div>
+
         <video src="http://webcreatorbox.com/sample/images/jewellery.mov" autoplay loop>
           <!-- <img src="http://webcreatorbox.com/sample/images/jewellery.jpg" alt="Placeholder"> -->
         </video>
         <div class="inner-bg shadow">
           <h1>思い出をもっと「思い出らしく」残す</h1>
-          <p>ボタンひとつで記録・共有する新たなセルフィー体験</p>
+          <p>ボタンひとつで撮影・共有する新たなセルフィー体験</p>
         </div>
         <a href="#about" class="scroll"><span></span></a>
     </section>
@@ -56,17 +57,17 @@
         <div class="step-wrapper">
           <!-- #TODO:画像はSVGの背景透明のものに変更 -->
           <div class="step-box">
-            <img src="images/cam.png" alt="recieve" width="50%">
+            <img src="images/camera.png" width="50%">
             <div class="box-title">カメラを設置する</div>
             <p class="box-content">専用アプリを搭載したAndroid端末を観光地やイベント会場に設置します。</p>
           </div>
           <div class="step-box">
-            <img src="images/push.png" alt="" width="50%">
+            <img src="images/push.png" width="50%">
             <div class="box-title">ボタンを押した写真を撮る</div>
             <p class="box-content">カード型デバイスにメールアドレスを登録し、ボタンを押すだけ。設置されているカメラで自撮り体験を楽しんでいただきます。</p>
           </div>
           <div class="step-box">
-            <img src="images/receive.png" alt="use-flow" width="50%">
+            <img src="images/sending.png" width="50%">
             <div class="box-title">写真が届く</div>
             <p class="box-content">各カードに登録されたメールアドレスに直接写真が届くので、一緒にボタンを押した人と共有されます</p>
           </div>
@@ -80,28 +81,28 @@
           <!-- #TODO: 横からスライド -->
           <div class="feature-1 fea">
             <div class="inner">
-              <img src="images/sample-img.png">
+              <img src="images/feature-1.png" class="feature-img">
               <div class="content">
-                <h3 class="major box-title">今までにない角度からの自撮り体験</h3>
-                 <p class="box-content">ボタン一つで複数の専用andoroid端末のシャッターが切れるのでありえない角度からの自撮体験が楽しめます</p>
+                <h3 class="box-title">今までにない角度からの自撮り体験</h3>
+                 <p class="box-content">専用android端末であれば最大50m~100mの遠隔地からの撮影や、複数台のシャッターを同時に切ることが出来るので、<br>通常の自撮ではありえないような遠景写真や多角写真の撮影を体験いただくことができます</p>
               </div>
             </div>
           </div>
           <div class="feature-2 fea">
             <div class="inner">
-              <img src="images/sample-img.png">
+              <img src="images/feature-2.png" class="feature-img">
               <div class="content">
-                <h3 class="major box-title">カメラマン不要</h3>
-                 <p class="box-content">カメラマン不要なので自然な写真や仲間全員で最高の瞬間を逃すことなく記録することが可能になります</p>
+                <h3 class="box-title">誰かが仲間外れになることがありません</h3>
+                 <p class="box-content">観光地やイベント会場各所の定点にカメラが設置されていれば、カメラマン不要でシャッターを切ることが出来ます。<br>そうすれば仲間の誰かがカメラマンになる必要が無いので、仲間全員で最高の瞬間を逃すことなく記録することができます</p>
               </div>
             </div>
           </div>
           <div class="feature-3 fea">
             <div class="inner">
-              <img src="images/sample-img.png">
+              <img src="images/feature-3.png" class="feature-img">
               <div class="content">
-                <h3 class="major box-title">驚くほど簡単にシェアできる</h3>
-                 <p class="box-content"> カード型デバイスに登録されたメールアドレスそれぞれに写真が直接届くため、面倒な共有のための手間が無くなります。その場で知り合った連絡先を知らない相手とでも同じ写真を簡単に共有することができます</p>
+                <h3 class="box-title">驚くほど簡単にシェアできる</h3>
+                 <p class="box-content"> カード型デバイスに登録されたメールアドレスそれぞれに写真が直接届くため、面倒な共有のための手間が無くなります。<br>その場で知り合った連絡先を知らない相手とでも同じ写真を簡単に共有することができます</p>
               </div>
             </div>
           </div>
@@ -126,38 +127,43 @@
       <div class="wrapper">
         <h2 class="heading">FAQ</h2>
         <div class="faq-container">
-          <!-- #TODO:アコーディオンメニューの実装 -->
-          <div class="faq-wrapper">
-            <h3 class="question">Q:どこで利用できますか？</h3>
-            <p class="answer">ourshotと提携している観光地、施設、イベント会場で入手していただきます。<br>提携先施設については今秋頃にアップロード致します。</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：撮影されたスマホのデータはどうなりますか？</h3>
-            <p class="answer">設置されたスマホではデータを保存しません。<br>ダイレクトに登録されたメールアドレスへ送付しますので自分の写真や個人情報は残りません。</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：登録されたメールアドレスはどうなりますか？</h3>
-            <p class="answer">クラウド上で弊社が管理しておりますので、設置されたスマホには一切個人情報は残りません。</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：個人一般向けのカード型デバイスの販売は行っていますか？</h3>
-            <p class="answer">現在準備中です</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：単発のイベントで利用することはできますか？</h3>
-            <p class="answer">期間レンタルから単発イベントへのレンタルまで幅広くサービス提供することが可能です。</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：撮影用のスマートフォンはiPhoneにも対応していますか？</h3>
-            <p class="answer">現在、対応機種はAndroid端末のみとなります。弊社からSIMカード入りの端末のレンタルも行っておりますので、気軽にご利用が可能です。</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：カード型デバイスの電池はどれくらいもちますか？</h3>
-            <p class="answer">１〜２年未満です</p>
-          </div>
-          <div class="faq-wrapper">
-            <h3 class="question">Q：カードについての問い合わせはどこにすれば良いですか？</h3>
-            <p class="answer">原則、利用中の施設に直接ご確認ください。</p>
+          <div class="faq">
+            <ul id="faq-list">
+              <li class="faq-list-item">
+                <h3 class="question">Q：どこで利用できますか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>ourshotと提携している観光地、施設、イベント会場で入手していただきます。<br>
+                    提携先施設については今秋頃にアップロード致します。<br>
+                    個人のお客様向けのカード型デバイスの販売は現在準備中です</p>
+                </div>
+              </li>
+              <li class="faq-list-item">
+                <h3 class="question">Q：撮影されたスマホのデータはどうなりますか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>設置されたスマホではデータを保存しません。<br>
+                    ダイレクトに登録されたメールアドレスへ送付しますので自分の写真や個人情報は残りません。<br>
+                    また、登録されたメールアドレスについても弊社がクラウド上で管理しておりますので、<br>設置されたスマホには一切個人情報は残りません。</p>
+                </div>
+              </li>
+              <li class="faq-list-item">
+                <h3 class="question">Q：単発のイベントで利用することはできますか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>期間レンタルから単発イベントへのレンタルまで幅広くサービス提供することが可能です。<br>
+                    （カード型デバイスの電池は１〜２年間なので、最長レンタル期間は１年です）</p>
+                </div>
+              </li>
+              <li class="faq-list-item">
+                <h3 class="question">Q：撮影用のスマートフォンはiPhoneにも対応していますか？</h3>
+                <span>+</span>
+                <div class="answer">
+                  <p>現在、対応機種はAndroid端末のみとなります。<br>
+                    弊社からSIMカード入りの端末のレンタルも行っておりますので、気軽にご利用が可能です</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -165,15 +171,36 @@
     <section id="contact">
       <h3 class="heading">Contact</h3>
       <div class="contact-wrapper">
-        <h3 class="service-text shadow">#ourshot_"YourSpot!!"</h3>
-        <p class=" service-text shadow">今秋リリースに向けた向けたourshotモニター企業・自治体を募集しております。<br>
+        <h3 class="service-title shadow">#ourshot_"YourSpot!!"</h3>
+        <p class=" service-content">今秋リリースに向けた向けたourshotモニター企業・自治体を募集しております。<br>
         お問い合わせはこちらまで</p>
-        <button class="btn">お問い合わせする</button>
+        <div class="general-button">
+          <a href="https://1lejend.com/stepmail/kd.php?no=UqpgJqOc" target="_blank">
+          <div class="button-content">
+            <i class="fa fa-envelope-o icon-font" aria-hidden="true"></i>
+            <p class="button-text">お問い合わせをする</p>
+          </div>
+        </a>
+        </div>
       </div>
       <!-- #TODO TOPに戻るボタンの実装 -->
     </section>
-    <footer class="footer">
-    </footer>
+    <footer class="main_footer">
+  		<div class="container">
+<!-- #TODO: HackCampロゴの配置 -->
+  			<div class="footer_logo"><a href="/"><img src="images/HackCamp_logo.png" alt="HackCamp logomark" size="20%" ></a></div>
+
+  			<nav class="footer_nav">
+  				<ul>
+  					<li><a href="/">ホーム</a></li>
+  					<li><a href="/#event_info">イベント情報</a></li>
+  					<li><a href="/#company_info">会社概要</a></li>
+  					<li><a href="https://1lejend.com/stepmail/kd.php?no=UqpgJqOc" target="_blank">お問い合わせ</a></li>
+  				</ul>
+  			</nav>
+  			<small class="copyright">HackCamp © 2016 </small>
+  		</div>
+	   </footer>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

@@ -23,11 +23,11 @@ body {
  }
 
  body {
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
    font-weight: 400;
    -webkit-font-smoothing: antialiased;
    font-size: 14px;
-   color: #888;
+   color: ;
  }
 
  li {
@@ -81,19 +81,230 @@ body {
    right: 0;
    bottom: 0;
    left: 0;
+   border-bottom: 2px solid　#EB5635
  }
 
  .heading:nth-child(odd) {
-  border-bottom: 2px solid #777;
+  border-bottom: 2px solid #EB5635;
 }
 
- .heading:nth-child(even){
-  border-bottom: 2px solid black;
+/*button*/
+
+
+/*------------------------------------------
+// User style start
+// change
+----------------------------------------- */
+
+.general-button  {
+  border-radius: 5px;
+  background-color: #00a791;
 }
- .major {
- 	padding-bottom: 1rem;
- 	border-bottom: solid 2px rgba(255, 255, 255, 0.125);
- }
+
+.general-button:before  {
+  border-radius: 5px;
+  border-bottom: 0px solid rgba(0,54,47, 0);
+  background-color: rgba(0,54,47, 0);
+}
+
+.button-content  {
+  border-radius: 0px 0px 5px 5px;
+  padding: 6px 7.5px;
+  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 0);
+  color: #f8f8f8;
+}
+
+.button-text  {
+  padding: 0px 7.5px;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.icon-font  {
+  padding: 0px 7.5px;
+  font-size: 27px;
+}
+
+/*----------------- at hover -----------------*/
+
+.general-button:hover  {
+  top: -3px;
+  transition: all 27ms;
+  -moz-transition: all 27ms;
+  -webkit-transition: all 27ms;
+  -o-transition: all 27ms;
+  background-color: #00b69e;
+}
+
+.general-button:hover:before  {
+  border-bottom: 3px solid rgba(0,54,47, 0);
+  transition: all 27ms;
+  -moz-transition: all 27ms;
+  -webkit-transition: all 27ms;
+  -o-transition: all 27ms;
+}
+
+.general-button:hover .button-content  {
+  box-shadow: 0px 3px 0px 0px rgba(0,54,47, 1);
+  transition: all 27ms;
+  -moz-transition: all 27ms;
+  -webkit-transition: all 27ms;
+  -o-transition: all 27ms;
+}
+
+/*----------------- at active -----------------*/
+
+.general-button:active  {
+  background-color: #008d7a;
+  box-shadow: 0px 1.6px 0px 0px rgba(0,29,25, 1) inset;
+}
+
+.general-button:active:before  {
+  top: -3px;
+  padding-bottom: 3px;
+  border-bottom: 0px solid rgba(0,54,47, 0);
+}
+
+.general-button:active .button-content  {
+  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 0);
+}
+
+/*------------------------------------------
+// User style end
+----------------------------------------- */
+
+/*------------------------------------------
+// Core style start
+// not change
+----------------------------------------- */
+
+.general-button  {
+  display: -moz-inline-box;
+  display: inline-block;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;transition: all 0ms;
+  -moz-transition: all 0ms;
+  -webkit-transition: all 0ms;
+  -o-transition: all 0ms;position: relative;
+  top: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.general-button:before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-content  {
+  display: table;
+  transition: all 0ms;
+  -moz-transition: all 0ms;
+  -webkit-transition: all 0ms;
+  -o-transition: all 0ms;
+}
+
+.button-text  {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.icon-font  {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*----------------- at hover -----------------*/
+
+.general-button:hover  {
+  transition-timing-function: ease-in-out;
+}
+
+.general-button:hover:before  {
+  transition-timing-function: ease-in-out;
+}
+
+.general-button:hover .button-content  {
+  transition-timing-function: ease-in-out;
+}
+
+/*----------------- at active -----------------*/
+
+.general-button:active  {
+  top: 0px;
+  transition: all 0ms;
+  -moz-transition: all 0ms;
+  -webkit-transition: all 0ms;
+  -o-transition: all 0ms;
+}
+
+.general-button:active:before  {
+  transition: all 0ms;
+  -moz-transition: all 0ms;
+  -webkit-transition: all 0ms;
+  -o-transition: all 0ms;
+}
+
+.general-button:active .button-content  {
+  transition: all 0ms;
+  -moz-transition: all 0ms;
+  -webkit-transition: all 0ms;
+  -o-transition: all 0ms;
+}
+
+/*------------------------------------------
+// Core style end
+----------------------------------------- */
+
+/*------------------------------------------
+// Touch style start
+----------------------------------------- */
+
+/*----------------- at hover -----------------*/
+
+.touch .general-button:hover  {
+  top: 0px;
+  background-color: #00a791;
+}
+
+.touch .general-button:hover:before  {
+  border-bottom: 0px solid rgba(0,54,47, 0);
+}
+
+.touch .general-button:hover .button-content  {
+  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 1);
+
+}
+
+/*----------------- at active -----------------*/
+
+.touch .general-button:active  {
+  background-color: #008d7a;
+  box-shadow: 0px 1.6px 0px 0px rgba(0,29,25, 1) inset;
+}
+
+.touch .general-button:active:before  {
+  top: -3px;
+  padding-bottom: 3px;
+  border-bottom: 0px solid rgba(0,54,47, 0);
+}
+
+.touch .general-button:active .button-content  {
+  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 0);
+}
+
+/*------------------------------------------
+// Touch style end
+----------------------------------------- */
+
 
  a {
   padding-top: 60px;
@@ -171,7 +382,7 @@ body {
 
  .btn {
 	position: relative;
-	background-color: #1abc9c;
+	background-color: #EB5635;
 	border-radius: 4px;
 	color: #fff;
 	line-height: 32px;
@@ -201,16 +412,26 @@ body {
  }
 
  /*-------  header  --------*/
+
  .header {
-   height: 50px;
    position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   background-color: #fff;
-   line-height: 50px;
-   border-bottom: 1px solid #eee;
+   width: 100%;
+   margin: 0 auto;
+   padding-top: 10px;
+   line-height: 1;
    z-index: 10;
+ }
+ .header:after {
+   content: "";
+   display: block;
+   line-height: 1;
+   width: 980px;
+   margin: 30px auto 0;
+   position: fixed;
+   z-index: 10;
+ }
+ .header .wrapper {
+     position: relative;
  }
 
  .header-title {
@@ -220,26 +441,61 @@ body {
  .header-logo {
    line-height: 40px;
    height: 40px;
-   padding-top: 10px;
+   padding-bottom: 10px;
  }
 
  .header-right{
    float: right;
+   line-height: 40px;
+   height: 40px;
+   padding-bottom: 10px;
+   color: white;
  }
 
+ .nav ul {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     font-size: 14px;
+
+ }
  .nav li {
    float: left;
+   position: relative;
  }
 
  .nav a {
    font-weight: 700;
    padding-left: 20px;
+   color: white;
  }
 
  .nav a:hover {
    color: #00A791;
    transition: color .3s;
  }
+
+ /*
+ */
+
+/*.header,
+
+/* Fixed */
+.header.fixed {
+    background-color: white;
+}
+.header.fixed .header-title {
+    color: #333;
+}
+
+.header.fixed:after {
+    width: 100%;
+    margin-top: 20px;
+}
+.header.fixed .header-right ul li a {
+    color: #333;
+    padding: 0 20px;
+}
 
  /*-------  top  --------*/
  #top {
@@ -327,19 +583,29 @@ body {
 /*------  Features  --------*/
  #features {
   background-color: white;
-  color: gray;
+  color: #095A50;
  }
 
  .feature-wrapper {
    margin-top: 1.5rem;
  }
-
- .feature-wrapper .inner {
-   /*padding: 3rem 0 1rem 0 ;*/
+ .inner {
+   width: 80%;
    margin: 0 auto;
-   width: 55em;
+  padding-top: 30px;
  }
 
+ .fea .box-content{
+   text-align: center;
+ }
+ .feature-img{
+   width: 20%;
+   height: 20%;
+   -webkit-border-radius:50%;
+	border-radius:50%;
+	border:3px solid #AAAAAA;
+	margin:0 10px;
+}
  .feature-1 {
    background-color: white;
    background-attachment: fixed;
@@ -372,7 +638,7 @@ body {
  }
 
  .feature-3 {
-  padding: 120px;
+  padding: 120px 0 120px;
   background-attachment: fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -408,28 +674,9 @@ body {
   transform: rotate(-3deg);
 }
 
- /*.feature-wrapper {
-    margin: 1.5em 0 1.0em;
-    position: relative;
-    padding-bottom: 15px;
-  }
-
-
-  .feature-wrapper .inner {
-    padding: 3rem 0 1rem 0 ;
-    margin: 0 auto;
-    width: 55em;
-  }*/
-
-
-h3.major {
-  padding-bottom: 1rem;
-  border-bottom: solid 2px #777;
-}
 
  /*------  Case  --------*/
 #case {
-   padding: 72px 0;
    background-color: #095A50;
    color: white;
  }
@@ -461,16 +708,33 @@ h3.major {
   padding-top: 1.5rem;
 }
 
-.question {
-  font-size: 2.5rem;
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 2.0rem;
   padding: 0.5rem 0 1.5rem;
   text-align: left;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:-3px;
+  right:5px;
+  color: #B3B3B3;
+  font-size:6.0rem;
 }
 
 .answer {
   font-size: 1.5rem;
   text-align: left;
   padding-bottom: 4.5rem;
+  display: none;
 }
 
  /*------  Contact  --------*/
@@ -479,8 +743,58 @@ h3.major {
     color: white;
    }
 
+   .service-title {
+     position: fixed;
+     margin: 30px 0 15px;
+     padding-bottom: 10px;
+     letter-spacing: 2px;
+     font-size: 3.0rem;
+   }
+
+   .service-content {
+     padding-bottom: 10px;
+     font-size: 2.0rem;
+   }
+
+
    .contact-wrapper{
      padding: 30px 0 40px;
+     margin: 0 auto;
+     margin-bottom: 30px;
+     background-color: black;
+     opacity: 0.6;
+     width: 60%;
    }
 
  /*------  Footer  --------*/
+.main_footer {
+    text-align: center;
+    color: white;
+    background-color: #00A690;
+    padding: 2rem 0;
+}
+.main_footer .footer_logo {
+    margin-bottom: 1rem;
+}
+.main_footer .footer_logo img {
+    width: 150px;
+}
+.main_footer .footer_nav {
+    margin-bottom: 1rem;
+}
+
+.main_footer ul, .main_footer li {
+    margin: 0;
+    padding: 0;
+}
+
+.main_footer li {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.main_footer li a {
+  color: white;
+}
