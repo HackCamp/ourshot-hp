@@ -512,7 +512,7 @@ body {
    z-index: -2;
  }
 
- video:before {
+ .video:before {
     z-index: -1;
     content: "";
     display: block;
@@ -524,7 +524,7 @@ body {
     background-color: rgba(0,0,0,0.70);
   }
 
- video {
+ .video {
    position: fixed;
    top: 0;
    left: 0;
