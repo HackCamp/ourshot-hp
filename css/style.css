@@ -91,221 +91,6 @@ body {
 /*button*/
 
 
-/*------------------------------------------
-// User style start
-// change
------------------------------------------ */
-
-.general-button  {
-  border-radius: 5px;
-  background-color: #00a791;
-}
-
-.general-button:before  {
-  border-radius: 5px;
-  border-bottom: 0px solid rgba(0,54,47, 0);
-  background-color: rgba(0,54,47, 0);
-}
-
-.button-content  {
-  border-radius: 0px 0px 5px 5px;
-  padding: 6px 7.5px;
-  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 0);
-  color: #f8f8f8;
-}
-
-.button-text  {
-  padding: 0px 7.5px;
-  line-height: 1.5em;
-  font-size: 18px;
-}
-
-.icon-font  {
-  padding: 0px 7.5px;
-  font-size: 27px;
-}
-
-/*----------------- at hover -----------------*/
-
-.general-button:hover  {
-  top: -3px;
-  transition: all 27ms;
-  -moz-transition: all 27ms;
-  -webkit-transition: all 27ms;
-  -o-transition: all 27ms;
-  background-color: #00b69e;
-}
-
-.general-button:hover:before  {
-  border-bottom: 3px solid rgba(0,54,47, 0);
-  transition: all 27ms;
-  -moz-transition: all 27ms;
-  -webkit-transition: all 27ms;
-  -o-transition: all 27ms;
-}
-
-.general-button:hover .button-content  {
-  box-shadow: 0px 3px 0px 0px rgba(0,54,47, 1);
-  transition: all 27ms;
-  -moz-transition: all 27ms;
-  -webkit-transition: all 27ms;
-  -o-transition: all 27ms;
-}
-
-/*----------------- at active -----------------*/
-
-.general-button:active  {
-  background-color: #008d7a;
-  box-shadow: 0px 1.6px 0px 0px rgba(0,29,25, 1) inset;
-}
-
-.general-button:active:before  {
-  top: -3px;
-  padding-bottom: 3px;
-  border-bottom: 0px solid rgba(0,54,47, 0);
-}
-
-.general-button:active .button-content  {
-  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 0);
-}
-
-/*------------------------------------------
-// User style end
------------------------------------------ */
-
-/*------------------------------------------
-// Core style start
-// not change
------------------------------------------ */
-
-.general-button  {
-  display: -moz-inline-box;
-  display: inline-block;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;transition: all 0ms;
-  -moz-transition: all 0ms;
-  -webkit-transition: all 0ms;
-  -o-transition: all 0ms;position: relative;
-  top: 0px;
-  cursor: pointer;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.general-button:before  {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.button-content  {
-  display: table;
-  transition: all 0ms;
-  -moz-transition: all 0ms;
-  -webkit-transition: all 0ms;
-  -o-transition: all 0ms;
-}
-
-.button-text  {
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
-}
-
-.icon-font  {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/*----------------- at hover -----------------*/
-
-.general-button:hover  {
-  transition-timing-function: ease-in-out;
-}
-
-.general-button:hover:before  {
-  transition-timing-function: ease-in-out;
-}
-
-.general-button:hover .button-content  {
-  transition-timing-function: ease-in-out;
-}
-
-/*----------------- at active -----------------*/
-
-.general-button:active  {
-  top: 0px;
-  transition: all 0ms;
-  -moz-transition: all 0ms;
-  -webkit-transition: all 0ms;
-  -o-transition: all 0ms;
-}
-
-.general-button:active:before  {
-  transition: all 0ms;
-  -moz-transition: all 0ms;
-  -webkit-transition: all 0ms;
-  -o-transition: all 0ms;
-}
-
-.general-button:active .button-content  {
-  transition: all 0ms;
-  -moz-transition: all 0ms;
-  -webkit-transition: all 0ms;
-  -o-transition: all 0ms;
-}
-
-/*------------------------------------------
-// Core style end
------------------------------------------ */
-
-/*------------------------------------------
-// Touch style start
------------------------------------------ */
-
-/*----------------- at hover -----------------*/
-
-.touch .general-button:hover  {
-  top: 0px;
-  background-color: #00a791;
-}
-
-.touch .general-button:hover:before  {
-  border-bottom: 0px solid rgba(0,54,47, 0);
-}
-
-.touch .general-button:hover .button-content  {
-  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 1);
-
-}
-
-/*----------------- at active -----------------*/
-
-.touch .general-button:active  {
-  background-color: #008d7a;
-  box-shadow: 0px 1.6px 0px 0px rgba(0,29,25, 1) inset;
-}
-
-.touch .general-button:active:before  {
-  top: -3px;
-  padding-bottom: 3px;
-  border-bottom: 0px solid rgba(0,54,47, 0);
-}
-
-.touch .general-button:active .button-content  {
-  box-shadow: 0px 0px 0px 0px rgba(0,54,47, 0);
-}
-
-/*------------------------------------------
-// Touch style end
------------------------------------------ */
-
-
  a {
   padding-top: 60px;
  }
@@ -388,12 +173,13 @@ body {
 	line-height: 32px;
 	-webkit-transition: none;
 	transition: none;
-	box-shadow: 0 3px 0 #0e8c73;
+	box-shadow: 0 3px 0 #6B2718;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  width: 180px;
 }
 .btn:hover {
-	background-color: #31c8aa;
-	box-shadow: 0 3px 0 #23a188;
+	background-color: #AB3F27;
+	box-shadow: 0 3px 0 #6B2718;
 }
 .btn:active {
 	top: 3px;
@@ -557,7 +343,9 @@ body {
      opacity: 0.7;
      color: white;
  }
-
+.movie-wrapper {
+  padding-top: 30px;
+}
  /*-------  about  --------*/
  #about {
  	background-color: #00A791;
@@ -774,35 +562,35 @@ body {
      width: 60%;
    }
 
- /*------  Footer  --------*/
-.main_footer {
-    text-align: center;
+   /*------  Footer  --------*/
+  .main_footer {
+      text-align: center;
+      color: white;
+      background-color: #00A690;
+      padding: 2rem 0;
+  }
+  .main_footer .footer_logo {
+      margin-bottom: 1rem;
+  }
+  .main_footer .footer_logo img {
+      width: 350px;
+  }
+  .main_footer .footer_nav {
+      margin-bottom: 1rem;
+  }
+
+  .main_footer ul, .main_footer li {
+      margin: 0;
+      padding: 0;
+  }
+
+  .main_footer li {
+      display: inline-block;
+      font-size: 1.5rem;
+      line-height: 1;
+      vertical-align: middle;
+  }
+
+  .main_footer li a {
     color: white;
-    background-color: #00A690;
-    padding: 2rem 0;
-}
-.main_footer .footer_logo {
-    margin-bottom: 1rem;
-}
-.main_footer .footer_logo img {
-    width: 150px;
-}
-.main_footer .footer_nav {
-    margin-bottom: 1rem;
-}
-
-.main_footer ul, .main_footer li {
-    margin: 0;
-    padding: 0;
-}
-
-.main_footer li {
-    display: inline-block;
-    font-size: 1.5rem;
-    line-height: 1;
-    vertical-align: middle;
-}
-
-.main_footer li a {
-  color: white;
-}
+  }
