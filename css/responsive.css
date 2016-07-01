@@ -1,14 +1,19 @@
 /* for Tablet */
 @media (max-width: 1000px ) {
-  .lesson{
-    width: 50%;
-    margin-bottom: 50px;
-  }
+  /*--- top ---*/
+  /*--- about ---*/
+  /*--- features ---*/
+  /*--- case--- */
+  /*--- faq--- */
+  /*--- contact--- */
 }
 
 /* for SmartPhone*/
 @media (max-width: 670px ) {
-  footer{
-    text-align: center;
-  }
+  /*--- top ---*/
+  /*--- about ---*/
+  /*--- features ---*/
+  /*--- case--- */
+  /*--- faq--- */
+  /*--- contact--- */
 }
