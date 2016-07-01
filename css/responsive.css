@@ -1,6 +1,9 @@
 /* for Tablet */
 @media screen and (max-width: 1000px ) {
   /*--- top ---*/
+  #top h1{
+     font-size: 3.5rem;
+  }
   /*--- about ---*/
   /*--- features ---*/
   /*--- case--- */
@@ -18,13 +21,13 @@
     display: none;
   }
   /*--- top ---*/
-  /*#top h1{
-     font-size: 4.5rem;
+  #top h1{
+     font-size: 2.5rem;
   }
 
   #top p{
       font-size: 2.5rem;
-  }*/
+  }
   /*--- about ---*/
   .about-top {
    font-size: 2.5rem;
