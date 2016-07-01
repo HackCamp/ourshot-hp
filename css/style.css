@@ -96,74 +96,78 @@ body {
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #48dabf;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.pace .pace-progress-inner {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #48dabf, 0 0 5px #48dabf;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -moz-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  -o-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
 }
 
 .pace .pace-activity {
   display: block;
   position: fixed;
   z-index: 2000;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-  background: #1dd5ab;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
-  transform: translateX(100%) translateY(-100%) rotate(45deg);
-  pointer-events: none;
+  top: 15px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: #48dabf;
+  border-left-color: #48dabf;
+  border-radius: 10px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  -moz-animation: pace-spinner 400ms linear infinite;
+  -ms-animation: pace-spinner 400ms linear infinite;
+  -o-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite;
 }
 
-.pace.pace-active .pace-activity {
-  -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
-  transform: translateX(50%) translateY(-50%) rotate(45deg);
+@-webkit-keyframes pace-spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
-
-.pace .pace-activity::before,
-.pace .pace-activity::after {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    display: block;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    content: '';
+@-moz-keyframes pace-spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
 }
-
-.pace .pace-activity::before {
-    margin-left: -40px;
-    width: 80px;
-    height: 80px;
-    border-right-color: rgba(0, 0, 0, .2);
-    border-left-color: rgba(0, 0, 0, .2);
-    -webkit-animation: pace-theme-corner-indicator-spin 3s linear infinite;
-    animation: pace-theme-corner-indicator-spin 3s linear infinite;
+@-o-keyframes pace-spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
 }
-
-.pace .pace-activity::after {
-    bottom: 50px;
-    margin-left: -20px;
-    width: 40px;
-    height: 40px;
-    border-top-color: rgba(0, 0, 0, .2);
-    border-bottom-color: rgba(0, 0, 0, .2);
-    -webkit-animation: pace-theme-corner-indicator-spin 1s linear infinite;
-    animation: pace-theme-corner-indicator-spin 1s linear infinite;
+@-ms-keyframes pace-spinner {
+  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
 }
-
-@-webkit-keyframes pace-theme-corner-indicator-spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(359deg); }
-}
-@keyframes pace-theme-corner-indicator-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(359deg); }
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
 }
 /*button*/
 
@@ -328,8 +332,6 @@ body {
    position: relative;
  }
 
-
-
  .nav a {
    font-weight: 700;
    padding-left: 20px;
@@ -340,11 +342,6 @@ body {
    color: #00A791;
    transition: color .3s;
  }
-
- /*
- */
-
-/*.header,
 
 /* Fixed */
 .header.fixed {
@@ -367,8 +364,7 @@ body {
     color: #00A791;
 }
 
-
- /*-------  top  --------*/
+ /*-------  Top  --------*/
  #top {
   height: 620px;
  }
@@ -394,8 +390,8 @@ body {
    width: auto;
    height: auto;
    z-index: -3;
-   -webkit-filter: brightness(50%);
-   filter:brightness(50%);
+   -webkit-filter: brightness(80%);
+   filter:brightness(80%);
  }
 
  .inner-bg {
@@ -413,10 +409,9 @@ body {
      opacity: 0.7;
      color: white;
  }
-.movie-wrapper {
-  padding-top: 30px;
-}
- /*-------  about  --------*/
+
+ /*-------  About  --------*/
+
  #about {
  	background-color: #00A791;
   color: white;
@@ -431,16 +426,22 @@ body {
  .about-text {
   font-size: 2.0rem;
  }
+
+ .movie-wrapper {
+   padding-top: 30px;
+ }
+
  .step-wrapper {
-   width: 80%;
    margin: 50px auto 0;
    table-layout: fixed;
    color: white;
  }
+ .step-img {
+   width: 50%;
+ }
  .step-box{
    display: table-cell;
-   width: 30%;
-   padding-right: 15px;
+   padding-right: 25px;
  }
  .step-text{
    padding-bottom: 30px
@@ -448,17 +449,18 @@ body {
 
 /*------  Features  --------*/
  #features {
-  background-color: white;
-  color: #095A50;
+  background-color: #095A50;
+  color: white;
  }
 
  .feature-wrapper {
    margin-top: 1.5rem;
  }
+
  .inner {
-   width: 80%;
+   width: 85%;
    margin: 0 auto;
-  padding-top: 30px;
+   padding-top: 40px;
  }
 
  .fea .box-content{
@@ -468,9 +470,9 @@ body {
    width: 20%;
    height: 20%;
    -webkit-border-radius:50%;
-	border-radius:50%;
-	border:3px solid #AAAAAA;
-	margin:0 10px;
+   border-radius:50%;
+   border:3px solid #AAAAAA;
+   margin:0 10px;
 }
  .feature-1 {
    background-image: url('../images/feature-1.png');
@@ -497,7 +499,9 @@ body {
    -o-transform: rotate(-3deg);
    transform: rotate(-3deg);
  }
-
+ /*.feature-1 .content {
+   padding-top: 60px;
+ }*/
 
  .feature-2 {
    background-color: #095A50;
@@ -543,7 +547,7 @@ body {
 }
 
 
- /*------  Case  --------*/
+/*------  Case  --------*/
 #case {
    background-color: #095A50;
    color: white;
@@ -555,7 +559,6 @@ body {
    margin: 50px auto 0;
    table-layout: fixed;
  }
-
  .case-box {
    display: table-cell;
    padding: 0 3.0rem 0;
@@ -565,38 +568,36 @@ body {
    margin-bottom: 30px;
    width: 70%;
  }
-  /*------  FAQ  --------*/
+
+/*------  FAQ  --------*/
  #faq {
   padding: 72px 0;
   background-color: white;
   color: #095A50;
   }
 
-.faq-container {
-  padding-top: 1.5rem;
-}
-
-.faq-list-item {
-  margin:10px;
-  border-bottom:1px solid #ccc;
-  position:relative;
-  cursor:pointer;
-  text-align: left;
-}
-
-.faq-list-item h3 {
-  font-size: 2.0rem;
-  padding: 0.5rem 0 1.5rem;
-  text-align: left;
-}
-
-.faq-list-item span {
-  position:absolute;
-  top:-3px;
-  right:5px;
-  color: #B3B3B3;
-  font-size:6.0rem;
-}
+ .faq-container {
+   padding-top: 1.5rem;
+ }
+ .faq-list-item {
+   margin:10px;
+   border-bottom:1px solid #ccc;
+   position:relative;
+   cursor:pointer;
+   text-align: left;
+ }
+ .faq-list-item h3 {
+   font-size: 2.0rem;
+   padding: 0.5rem 0 1.5rem;
+   text-align: left;
+ }
+ .faq-list-item span {
+   position:absolute;
+   top:-3px;
+   right:5px;
+   color: #B3B3B3;
+   font-size:6.0rem;
+ }
 
 .answer {
   font-size: 1.5rem;
@@ -605,31 +606,29 @@ body {
   display: none;
 }
 
- /*------  Contact  --------*/
+/*------  Contact  --------*/
 
-  #contact {
-    color: white;
-   }
+ #contact {
+   color: white;
+ }
 
-   .service-title {
-     position: fixed;
-     margin: 30px 0 15px;
-     padding-bottom: 10px;
-     letter-spacing: 2px;
-     font-size: 3.0rem;
-   }
+ .service-title {
+   padding-bottom: 10px;
+   letter-spacing: 2px;
+   font-size: 4.0rem;
+   color: #00A791;
+ }
 
-   .service-content {
-     padding-bottom: 10px;
-     font-size: 2.0rem;
-   }
+ .service-content {
+   padding-bottom: 25px;
+   font-size: 2.0rem;
+ }
 
-
-   .contact-wrapper{
-     padding: 30px 0 40px;
-     margin: 0 auto;
-     margin-bottom: 30px;
-   }
+ .contact-wrapper{
+   padding: 30px 0 40px;
+   margin: 0 auto;
+   margin-bottom: 15px;
+ }
 
    /*------  Footer  --------*/
   .main_footer {
@@ -651,15 +650,21 @@ body {
   .main_footer ul, .main_footer li {
       margin: 0;
       padding: 0;
+      text-align: center;
   }
 
   .main_footer li {
       display: inline-block;
       font-size: 1.5rem;
+      padding-right: 1.0rem;
       line-height: 1;
       vertical-align: middle;
   }
 
   .main_footer li a {
     color: white;
+  }
+
+  .copyright {
+    text-align: center;
   }
