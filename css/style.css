@@ -298,7 +298,7 @@ body {
    position: fixed;
    z-index: 10;
  }
- .header .wrapper {
+ .header .header-wrapper {
      position: relative;
  }
 
