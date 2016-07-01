@@ -87,6 +87,11 @@ body {
  .heading:nth-child(odd) {
   border-bottom: 2px solid #EB5635;
 }
+.filter:{
+  -webkit-filter: brightness(50%);
+  filter:brightness(50%);
+ }
+
 /*pace*/
 .pace {
   -webkit-pointer-events: none;
@@ -241,6 +246,7 @@ body {
 	position: relative;
 	background-color: #EB5635;
 	border-radius: 4px;
+  font-size: 1.5rem;
 	color: #fff;
 	line-height: 32px;
 	-webkit-transition: none;
@@ -377,17 +383,7 @@ body {
    z-index: -2;
  }
 
- .video:before {
-    z-index: -1;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.70);
-  }
+
 
  .video {
    position: fixed;
@@ -398,6 +394,8 @@ body {
    width: auto;
    height: auto;
    z-index: -3;
+   -webkit-filter: brightness(50%);
+   filter:brightness(50%);
  }
 
  .inner-bg {
@@ -478,6 +476,7 @@ body {
    background-image: url('../images/feature-1.png');
    background-attachment: fixed;
    -webkit-background-size: cover;
+   color: white;
    background-size: cover;
    background-position: center center;
    overflow: hidden;
@@ -630,9 +629,6 @@ body {
      padding: 30px 0 40px;
      margin: 0 auto;
      margin-bottom: 30px;
-     background-color: black;
-     opacity: 0.6;
-     width: 60%;
    }
 
    /*------  Footer  --------*/
