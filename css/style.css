@@ -81,7 +81,7 @@ body {
    right: 0;
    bottom: 0;
    left: 0;
-   border-bottom: 2px solid　#EB5635
+   border-bottom: 2px solid　#EB5635;
  }
 
  .heading:nth-child(odd) {
@@ -332,6 +332,10 @@ body {
    position: relative;
  }
 
+ .nav li .active {
+   color: #EB5635
+ }
+
  .nav a {
    font-weight: 700;
    padding-left: 20px;
@@ -355,6 +359,7 @@ body {
     width: 100%;
     margin-top: 20px;
 }
+
 .header.fixed .header-right ul li a {
     color: #333;
     padding: 0 20px;
@@ -362,6 +367,9 @@ body {
 
 .header.fixed .header-right ul li a:hover {
     color: #00A791;
+}
+.header.fixed .header-right ul li a.active {
+    border: solid 2px #EB5635;
 }
 
  /*-------  Top  --------*/
@@ -611,24 +619,32 @@ body {
  #contact {
    color: white;
  }
-
- .service-title {
-   padding-bottom: 10px;
-   letter-spacing: 2px;
-   font-size: 4.0rem;
-   color: #00A791;
- }
-
- .service-content {
-   padding-bottom: 25px;
-   font-size: 2.0rem;
- }
-
  .contact-wrapper{
    padding: 30px 0 40px;
    margin: 0 auto;
    margin-bottom: 15px;
  }
+ .service-title {
+   padding-bottom: 10px;
+   display: inline-block;
+   letter-spacing: 2px;
+   font-size: 4.0rem;
+   color: #00A791;
+   position: relative;
+ }
+ .service-title::after {
+   content: '';
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(transparent 60%, #fff001 0%);
+ }
+ .service-content {
+   padding-bottom: 25px;
+   font-size: 2.0rem;
+ }
+
 
    /*------  Footer  --------*/
   .main_footer {
@@ -636,6 +652,7 @@ body {
       color: white;
       background-color: #00A690;
       padding: 2rem 0;
+      height: 280px;
   }
   .main_footer .footer_logo {
       margin-bottom: 1rem;

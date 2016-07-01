@@ -1,4 +1,4 @@
-$(function(){ 
+$(function(){
   paceOptions = {
     ajax: false,
     document: false,
@@ -11,6 +11,35 @@ $(function(){
   Pace.on("done",function(){
     console.log("完了！");
   });
+  var scrollMenu = function() {
+        var array = {
+            '#top': 0,
+            '#about': 0,
+            '#features': 0,
+            '#case': 0,
+            '#faq': 0,
+            '#contact': 0
+        };
+
+        var $globalNavi = new Array();
+        for (var key in array) {
+            if ($(key).offset()) {
+                array[key] = $(key).offset().top - 70;
+                $globalNavi[key] = $('.header-right ul li a[href="' + key + '"]');
+            }
+        }
+        $(window).scroll(function () {
+            for (var key in array) {
+                if ($(window).scrollTop() > array[key] - 50) {
+                    $('.header-right ul li a').each(function() {
+                        $(this).removeClass('active');
+                    });
+                    $globalNavi[key].addClass('active');
+                }
+            }
+        });
+    }
+    scrollMenu();
 
   $('header a').click(function(){
     var id = $(this).attr('href');
