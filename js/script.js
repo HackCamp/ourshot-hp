@@ -1,4 +1,16 @@
-$(function(){
+$(function(){ 
+  paceOptions = {
+    ajax: false,
+    document: false,
+    eventLag: false,
+    elements: {
+      selectors: ['.sample']
+    }
+  };
+
+  Pace.on("done",function(){
+    console.log("完了！");
+  });
 
   $('header a').click(function(){
     var id = $(this).attr('href');
@@ -41,6 +53,6 @@ $(function(){
       $(this).find('span').text('-');
     }
   });
-  
+
 
 });
