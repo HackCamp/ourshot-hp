@@ -1,5 +1,5 @@
 /* for Tablet */
-@media (max-width: 1000px ) {
+@media screen and (max-width: 1000px ) {
   /*--- top ---*/
   /*--- about ---*/
   /*--- features ---*/
@@ -9,11 +9,67 @@
 }
 
 /* for SmartPhone*/
-@media (max-width: 670px ) {
+@media all and (max-width: 670px ) {
+  /*--- header ---*/
+  .header-title {
+    padding:0 10px;
+  }
+  .header-right {
+    display: none;
+  }
   /*--- top ---*/
+  /*#top h1{
+     font-size: 4.5rem;
+  }
+
+  #top p{
+      font-size: 2.5rem;
+  }*/
   /*--- about ---*/
+  .about-top {
+   font-size: 2.5rem;
+  }
+  .about-text {
+   font-size: 1.0rem;
+  }
+  .logo-name {
+    width: 40%;
+  }
+  .step-wrapper,.step-box {
+    display: block;
+    padding: 0 20px;
+  }
+
   /*--- features ---*/
+  .fea .box-title {
+    font-size: 2.0rem;
+  }
+
+  .fea .box-content {
+    font-size:1.0rem;
+  }
   /*--- case--- */
+  .case-wrapper,.case-box {
+    display: block;
+    padding: 0 20px;
+  }
   /*--- faq--- */
+  .faq-list-item h3 {
+    font-size: 1.5rem;
+  }
+  .faq-list-item span {
+    font-size: 2.5rem;
+  }
+  .faq-list-item .answer {
+    font-size: 1.0rem;
+  }
   /*--- contact--- */
+  .service-title {
+    font-size: 2.5rem;
+  }
+
+  .service-content {
+    padding-bottom: 25px;
+    font-size: 1.0rem;
+  }
 }

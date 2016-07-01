@@ -216,13 +216,13 @@ a span {
 
  .scroll{
    position: absolute;
- bottom: 20px;
- left: 50%;
- z-index: 2;
- display: inline-block;
- -webkit-transform: translate(0, -50%);
- transform: translate(0, -50%);
- text-decoration: none;
+   bottom: 20px;
+   left: 50%;
+   z-index: 2;
+   display: inline-block;
+   -webkit-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   text-decoration: none;
  }
  .scroll span {
    position: absolute;
@@ -396,6 +396,7 @@ a span {
    top: 0;
    left: 0;
    width: 100%;
+   min-width: 100%;
    min-height: 100%;
    width: auto;
    height: auto;
@@ -621,12 +622,12 @@ a span {
    font-size:6.0rem;
  }
 
-.answer {
-  font-size: 1.5rem;
-  text-align: left;
-  padding-bottom: 4.5rem;
-  display: none;
-}
+ .faq-list-item .answer {
+   font-size: 1.5rem;
+   text-align: left;
+   padding-bottom: 4.5rem;
+   display: none;
+ }
 
 /*------  Contact  --------*/
 
@@ -640,19 +641,10 @@ a span {
  }
  .service-title {
    padding-bottom: 10px;
-   display: inline-block;
    letter-spacing: 2px;
    font-size: 4.0rem;
    color: #00A791;
    position: relative;
- }
- .service-title::after {
-   content: '';
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background: linear-gradient(transparent 60%, #fff001 0%);
  }
  .service-content {
    padding-bottom: 25px;
