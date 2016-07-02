@@ -539,7 +539,7 @@ a span {
 
  .feature-3 {
   padding: 120px 0 120px;
-  background-image: url('../images/feature-3-dark.png');
+  background-image: url('../images/feature-3.png');
   background-attachment: fixed;
   -webkit-background-size: cover;
   background-position: right bottom;
