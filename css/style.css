@@ -502,14 +502,6 @@ a span {
  .fea .box-content{
    text-align: center;
  }
- .feature-img{
-   width: 20%;
-   height: 20%;
-   /*-webkit-border-radius:50%;
-   border-radius:50%;
-   border:3px solid #AAAAAA;*/
-   margin:0 10px;
-}
  .feature-1 {
    background-image: url('../images/feature-1.png');
    background-attachment: fixed;
