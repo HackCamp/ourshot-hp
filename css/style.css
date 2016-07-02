@@ -449,14 +449,10 @@ a span {
   font-size: 2.0rem;
  }
 
- /*.youtube {
-   padding: 0 180px;
- }*/
-
  .movie-wrapper {
  	position: relative;
  	height: 0;
- 	padding: 30px 0 56.25%;
+ 	padding: 100px 0 56.25%;
  	overflow: hidden;
  }
  .movie-wrapper iframe {
@@ -670,6 +666,13 @@ a span {
       background-color: #00A690;
       padding: 2rem 0;
       height: 280px;
+  }
+  .main_footer .footer_logo_ourshot {
+    margin: 0 auto;
+  }
+  .main_footer .footer_logo_ourshot img{
+    padding: 10px;
+    width: 340px;
   }
   .main_footer .footer_logo {
       margin-bottom: 1rem;
