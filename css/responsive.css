@@ -13,8 +13,28 @@
 
 /* for SmartPhone*/
 @media all and (max-width: 670px ) {
+  .box-title{
+   font-size: 1.8rem;
+   padding: 1.0rem 0 2.0rem;
+   text-align: center;
+  }
+
+  .box-content{
+   font-size: 1.2rem;
+   text-align: left;
+   padding-bottom: 4.5rem;
+  }
+
+
+  .heading {
+    font-size: 3.0rem;
+  }
+  /*--- top ---*/
+  #top {
+    height:550px
+  }
   .inner-bg {
-    padding: 200px 0px 100px;
+    padding: 180px 0px 30px;
   }
   /*--- header ---*/
   .header-title {
@@ -58,9 +78,11 @@
   .case-wrapper,.case-box {
     display: block;
   }
+
+  .case
   /*--- faq--- */
   .faq-list-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
   .faq-list-item span {
     font-size: 2.5rem;
