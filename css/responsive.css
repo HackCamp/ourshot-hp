@@ -13,6 +13,9 @@
 
 /* for SmartPhone*/
 @media all and (max-width: 670px ) {
+  .inner-bg {
+    padding: 200px 0px 100px;
+  }
   /*--- header ---*/
   .header-title {
     padding:0 10px;
