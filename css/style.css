@@ -503,12 +503,13 @@ a span {
    text-align: center;
  }
  .feature-1 {
-  background-image: url('../images/feature-1.png');
+  background-image: url('../images/feature-1.png') ;
+  background-repeat: no-repeat;
+  background-position: right bottom;
   background-attachment: fixed;
   -webkit-background-size: cover;
   color: white;
   background-size: cover;
-  background-position: center center;
   overflow: hidden;
   position: relative;
   padding-bottom: 180px
@@ -545,7 +546,7 @@ a span {
   background-image: url('../images/feature-3-dark.png');
   background-attachment: fixed;
   -webkit-background-size: cover;
-  background-position: center center;
+  background-position: right bottom;
   position: relative;
   color: white;
   overflow: hidden;
