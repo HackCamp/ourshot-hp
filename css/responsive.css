@@ -79,10 +79,9 @@
     display: block;
   }
 
-  .case
   /*--- faq--- */
   .faq-list-item h3 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
   .faq-list-item span {
     font-size: 2.5rem;
@@ -100,6 +99,14 @@
     font-size: 1.0rem;
   }
   /*--- footer ---*/
+  .main_footer .footer_logo_ourshot {
+    margin: 0 auto;
+  }
+  .main_footer .footer_logo_ourshot img{
+    /*background-color: white;*/
+    padding: 10px;
+    width: 240px;
+  }
   .main_footer .footer_logo img {
       width: 250px;
   }
