@@ -503,30 +503,34 @@ a span {
    text-align: center;
  }
  .feature-1 {
-   background-image: url('../images/feature-1.png');
-   background-attachment: fixed;
-   -webkit-background-size: cover;
-   color: white;
-   background-size: cover;
-   background-position: center center;
-   overflow: hidden;
-   position: relative;
-   padding-bottom: 180px
- }
+  background-image: url('../images/feature-1.png');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 180px
+}
 
- .feature-1:before {
-   background: #095A50;
-   content: "";
-   position: absolute;
-   height: 250px;
-   width: 250%;
-   bottom: -200px;
-   left: -100%;
-   -webkit-transform: rotate(-3deg);
-   -ms-transform: rotate(-3deg);
-   -o-transform: rotate(-3deg);
-   transform: rotate(-3deg);
- }
+.feature-1:before {
+  background: #095A50;
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 250%;
+  bottom: -200px;
+  left: -100%;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.feature-1 .content {
+  padding-top: 60px;
+}
  /*.feature-1 .content {
    padding-top: 60px;
  }*/
