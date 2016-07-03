@@ -624,7 +624,7 @@ a span {
  .service-title {
    padding-bottom: 10px;
    letter-spacing: 2px;
-   font-size: 4.0rem;
+   font-size: 2.0rem;
    color: #00A791;
    position: relative;
    font-family: 'Tahoma';
@@ -641,12 +641,13 @@ a span {
       color: white;
       background-color: #00A690;
       padding: 2rem 0;
-      height: 280px;
+      height: 180px;
   }
   .main_footer .footer_logo_ourshot {
     margin: 0 auto;
   }
   .main_footer .footer_logo_ourshot img{
+    display: none;
     padding: 10px;
     width: 340px;
   }
