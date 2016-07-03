@@ -77,6 +77,7 @@
   /*--- case--- */
   .case-wrapper,.case-box {
     display: block;
+    padding:0;
   }
 
   /*--- faq--- */
@@ -91,7 +92,7 @@
   }
   /*--- contact--- */
   .service-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .service-content {
@@ -99,6 +100,9 @@
     font-size: 1.0rem;
   }
   /*--- footer ---*/
+  .main_footer {
+    height: 140px;
+  }
   .main_footer .footer_logo_ourshot {
     margin: 0 auto;
   }
