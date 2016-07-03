@@ -81,10 +81,10 @@
     font-size:1.0rem;
   }
   .feature-1 {
-    position: fixed;
+    background-attachment: scroll;
   }
   .feature-3 {
-    position: fixed;
+    background-attachment: scroll;
   }
   /*--- case--- */
   #case .heading {
