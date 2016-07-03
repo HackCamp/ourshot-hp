@@ -7,13 +7,12 @@
   video {
     display:none;
   }
-
   .top-wrapper {
     background-image: url("../images/top-cover.gif");
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center center;
     position: fixed;
+    background-position: center center;
     top: 0;
     left: 0;
     width: 100%;
