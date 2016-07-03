@@ -93,6 +93,9 @@
   .faq-list-item .answer {
     font-size: 1.0rem;
   }
+  .faq-list-item .answer br{
+    display: none;
+  }
   /*--- contact--- */
   .service-title {
     font-size: 1.2rem;
@@ -116,5 +119,8 @@
   }
   .main_footer .footer_logo img {
       width: 250px;
+  }
+  .footer_nav ul li {
+    font-size: 1.0rem;
   }
 }
