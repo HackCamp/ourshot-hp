@@ -425,8 +425,9 @@ a span {
   font-size: 2.0rem;
  }
  .youtube {
-    max-width: 675px;
-    margin: 0 auto;
+   padding-top: 30px;
+   max-width: 675px;
+   margin: 0 auto;
  }
  .movie-wrapper {
    position: relative;
@@ -580,11 +581,13 @@ a span {
 
 /*------  FAQ  --------*/
  #faq {
-  padding: 72px 0;
   background-color: white;
   color: #095A50;
   }
 
+ #faq-list {
+  padding-bottom: 30px;
+}
  .faq-container {
    padding-top: 1.5rem;
  }

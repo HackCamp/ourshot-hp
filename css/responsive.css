@@ -80,6 +80,12 @@
   .fea .box-content {
     font-size:1.0rem;
   }
+  .feature-1 {
+    position: fixed;
+  }
+  .feature-3 {
+    position: fixed;
+  }
   /*--- case--- */
   #case .heading {
     margin: 15px 0 15px;
