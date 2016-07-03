@@ -25,6 +25,9 @@
    padding-bottom: 4.5rem;
   }
 
+  .step-box .box-content br {
+    display: none;
+  }
 
   .heading {
     font-size: 3.0rem;
