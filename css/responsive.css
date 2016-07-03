@@ -91,7 +91,7 @@
 
   /*--- faq--- */
   #faq {
-    padding: 0;
+    padding-bottom: 15px;
   }
   #faq .heading {
     margin-bottom: 15px;
