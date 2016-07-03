@@ -21,8 +21,8 @@
     width: auto;
     height: auto;
     z-index: -3;
-    -webkit-filter: brightness(50%);
-    filter:brightness(50%);
+    -webkit-filter: brightness(70%);
+    filter:brightness(70%);
   }
   /*--- about ---*/
   /*--- features ---*/
@@ -82,8 +82,8 @@
     width: auto;
     height: auto;
     z-index: -3;
-    -webkit-filter: brightness(50%);
-    filter:brightness(50%);
+    -webkit-filter: brightness(70%);
+    filter:brightness(70%);
   }
   /*--- header ---*/
   .header-title {
