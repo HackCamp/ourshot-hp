@@ -5,10 +5,34 @@
      font-size: 3.5rem;
   }
   video {
+    display:none;
+  }
 
+  .top-wrapper {
+    background-image: url("../images/top-cover.gif");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -3;
+    -webkit-filter: brightness(50%);
+    filter:brightness(50%);
   }
   /*--- about ---*/
   /*--- features ---*/
+  .feature-1 {
+    background-attachment: scroll;
+  }
+  .feature-3 {
+    background-attachment: scroll;
+  }
   /*--- case--- */
   /*--- faq--- */
   /*--- contact--- */
@@ -41,6 +65,26 @@
   }
   .inner-bg {
     padding: 180px 0px 30px;
+  }
+  video {
+    display:none;
+  }
+  .top-wrapper {
+    background-image: url("../images/top-cover.gif");
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -3;
+    -webkit-filter: brightness(50%);
+    filter:brightness(50%);
   }
   /*--- header ---*/
   .header-title {

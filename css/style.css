@@ -375,20 +375,9 @@ a span {
    width: auto;
    height: auto;
    z-index: -3;
-   -webkit-filter: brightness(80%);
-   filter:brightness(80%);
+   -webkit-filter: brightness(50%);
+   filter:brightness(50%);
  }
- /*.video {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -3;
-}*/
 
  .inner-bg {
      padding: 250px 0px 240px;
