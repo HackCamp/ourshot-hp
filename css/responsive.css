@@ -81,12 +81,24 @@
     font-size:1.0rem;
   }
   /*--- case--- */
+  #case {
+    padding: 0;
+  }
+  #case .heading {
+    margin: 15px 0 15px;
+  }
   .case-wrapper,.case-box {
     display: block;
     padding:0;
   }
 
   /*--- faq--- */
+  #faq {
+    padding: 0;
+  }
+  #faq .heading {
+    margin-bottom: 15px;
+  }
   .faq-list-item h3 {
     font-size: 1.2rem;
   }
@@ -116,7 +128,6 @@
     margin: 0 auto;
   }
   .main_footer .footer_logo_ourshot img{
-    /*background-color: white;*/
     padding: 10px;
     width: 240px;
   }
