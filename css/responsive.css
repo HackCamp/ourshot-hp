@@ -65,6 +65,9 @@
   .inner-bg {
     padding: 180px 0px 30px;
   }
+  #top p{
+    font-size: 1.5rem;
+  }
   video {
     display:none;
   }
@@ -96,9 +99,9 @@
   #top h1{
      font-size: 2.5rem;
   }
-
   #top p{
-      font-size: 2.5rem;
+      font-size: 1.5rem;
+      padding-top: 40px;
   }
   /*--- about ---*/
   .about-top {
@@ -152,7 +155,7 @@
     font-size: 1.2rem;
   }
   .faq-list-item span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .faq-list-item .answer {
     font-size: 1.0rem;

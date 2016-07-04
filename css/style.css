@@ -385,7 +385,11 @@ a span {
  }
 
  .inner-bg {
-     padding: 250px 0px 240px;
+     padding: 190px 0px 240px;
+ }
+
+ .top-contact {
+   text-align: right;
  }
  #top h1{
     text-align: left;
