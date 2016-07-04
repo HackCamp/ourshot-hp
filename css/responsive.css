@@ -133,6 +133,9 @@
   #case .heading {
     margin: 15px 0 15px;
   }
+  #case-wrapper .box-title {
+    padding-top:15px;
+  }
   .case-wrapper,.case-box {
     display: block;
     padding:0;

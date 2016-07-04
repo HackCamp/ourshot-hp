@@ -56,6 +56,10 @@ body {
    color: #444;
    font-size: 1.8rem;
  }
+ .major {
+   padding-bottom: 1em;
+   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+ }
 
  .wrapper {
    max-width: 1170px;
@@ -216,35 +220,36 @@ a span {
 
 
  .shadow {
-     color: #fff;
-     text-shadow:
-         1px 1px 0 #000,
-         1px -1px 0 #000,
-         -1px 1px 0 #000,
-         -1px -1px 0 #000;
+   color: #fff;
+   text-shadow:
+       1px 1px 0 #000,
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+       -1px -1px 0 #000;
  }
 
  .btn {
-	position: relative;
-	background-color: #EB5635;
-	border-radius: 4px;
-  font-size: 1.5rem;
-	color: #fff;
-	line-height: 32px;
-	-webkit-transition: none;
-	transition: none;
-	box-shadow: 0 3px 0 #6B2718;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-  width: 180px;
+  position: relative;
+   background-color: #EB5635;
+   border-radius: 4px;
+   font-size: 1.5rem;
+   color: #fff;
+   line-height: 32px;
+   -webkit-transition: none;
+   transition: none;
+   box-shadow: 0 3px 0 #6B2718;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+   width: 180px;
 }
 .btn:hover {
-	background-color: #AB3F27;
-	box-shadow: 0 3px 0 #6B2718;
+   background-color: #AB3F27;
+   box-shadow: 0 3px 0 #6B2718;
 }
 .btn:active {
-	top: 3px;
-	box-shadow: none;
+   top: 3px;
+   box-shadow: none;
 }
+
  .box-title{
   font-size: 2.5rem;
   padding: 1.0rem 0 2.0rem;
