@@ -1,11 +1,29 @@
 $(function(){
-  mixpanel.track("View page");
 
+// mixpanel
+  mixpanel.track("View page");
 $('#top-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Top"});
 });
 
+$('#bottom-contact-btn').click(function(){
+  mixpanel.track("Open contact", {"Contact Location": "Bottom"});
+});
 
+$('.faq-list-item').click(function() {
+  mixpanel.track("Open faq");
+});
+
+$('header a').click(function(){
+  mixpanel.track("Click header");
+});
+
+
+$('iframe').click(function(){
+  mixpanel.track("Play video");
+});
+
+//Pace
   paceOptions = {
     ajax: false,
     document: false,
@@ -27,7 +45,6 @@ $('#top-contact-btn').click(function(){
             '#faq': 0,
             '#contact': 0
         };
-
         var $globalNavi = new Array();
         for (var key in array) {
             if ($(key).offset()) {
@@ -87,6 +104,4 @@ $('#top-contact-btn').click(function(){
       $(this).find('span').text('▲');
     }
   });
-
-
 });
