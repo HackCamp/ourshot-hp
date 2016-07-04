@@ -8,7 +8,7 @@
     display:none;
   }
   .top-wrapper {
-    background-image: url("../images/top-cover.gif");
+    background-image: url("../images/top-sp.gif");
     -webkit-background-size: cover;
     background-size: cover;
     position: fixed;
