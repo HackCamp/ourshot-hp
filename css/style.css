@@ -629,9 +629,9 @@ a span {
  }
  .service-title {
    padding-bottom: 10px;
-   letter-spacing: 2px;
+   letter-spacing: 5px;
    font-size: 2.0rem;
-   color: #00A791;
+   color: #fff;
    position: relative;
    font-family: 'Tahoma';
  }
