@@ -18,10 +18,9 @@ $('header a').click(function(){
   mixpanel.track("Click header");
 });
 
-
-$('iframe').click(function(){
-  mixpanel.track("Play video");
-});
+$("#play").on("click", function(){
+　　mixpanel.track("Play video");
+  });
 
 //Pace
   paceOptions = {
