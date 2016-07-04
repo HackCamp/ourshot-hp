@@ -33,7 +33,7 @@ $("#play").on("click", function(){
   };
 
   Pace.on("done",function(){
-    console.log("完了！");
+    console.log("読込完了");
   });
   var scrollMenu = function() {
         var array = {
