@@ -144,6 +144,7 @@
   }
   .faq-list-item span {
     font-size: 1.2rem;
+    padding-top: 6px;
   }
   .faq-list-item .answer {
     font-size: 1.0rem;
