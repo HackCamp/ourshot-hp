@@ -1,5 +1,11 @@
 $(function(){
   mixpanel.track("View page");
+
+$('top-contact-btn').click(function(){
+  mixpanel.track("Open contact", {"Contact Location": "Top"});
+});
+
+
   paceOptions = {
     ajax: false,
     document: false,
