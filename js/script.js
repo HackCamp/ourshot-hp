@@ -10,7 +10,7 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-$('.ytp-button').click(function(){
+$('.ytp-button .ytp-cards-button').click(function(){
 　　mixpanel.track("Play video");
   });
 
