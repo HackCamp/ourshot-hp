@@ -443,15 +443,12 @@ a span {
  }
 
  .step-wrapper {
-   display: table;
    margin: 50px auto 0;
    table-layout: fixed;
    color: white;
-
  }
  .step-img {
-   width: 60%;
-   text-align: center;
+   width: 50%;
  }
  .step-box{
    display: table-cell;
