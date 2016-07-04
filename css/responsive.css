@@ -135,9 +135,15 @@
   }
   .feature-1 {
     background-attachment: scroll;
+    -webkit-background-size: cover;
+    background-position: right bottom;
+    position: fixed;
   }
   .feature-3 {
     background-attachment: scroll;
+    -webkit-background-size: cover;
+    background-position: right bottom;
+    position: fixed;
   }
   /*--- case--- */
   #case .heading {
