@@ -135,15 +135,9 @@
   }
   .feature-1 {
     background-attachment: scroll;
-    -webkit-background-size: cover;
-    background-position: right bottom;
-    position: absolute;
   }
   .feature-3 {
     background-attachment: scroll;
-    -webkit-background-size: cover;
-    background-position: right bottom;
-    position: absolute;
   }
   /*--- case--- */
   #case .heading {
