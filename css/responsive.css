@@ -137,13 +137,13 @@
     background-attachment: scroll;
     -webkit-background-size: cover;
     background-position: right bottom;
-    position: fixed;
+    position: absolute;
   }
   .feature-3 {
     background-attachment: scroll;
     -webkit-background-size: cover;
     background-position: right bottom;
-    position: fixed;
+    position: absolute;
   }
   /*--- case--- */
   #case .heading {
