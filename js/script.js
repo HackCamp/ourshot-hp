@@ -10,15 +10,7 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-$('.faq-list-item').click(function() {
-  mixpanel.track("Open faq");
-});
-
-$('header a').click(function(){
-  mixpanel.track("Click header");
-});
-
-$("#play").on("click", function(){
+$("#YouTube").on("click", function(){
 　　mixpanel.track("Play video");
   });
 
@@ -98,6 +90,7 @@ $("#play").on("click", function(){
       $answer.slideUp();
       $(this).find('span').text('▼');
     } else {
+      mixpanel.track("Open faq");
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
