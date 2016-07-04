@@ -14,19 +14,7 @@ $("#YouTube").on("click", function(){
 　　mixpanel.track("Play video");
   });
 
-//Pace
-  paceOptions = {
-    ajax: false,
-    document: false,
-    eventLag: false,
-    elements: {
-      selectors: ['.sample']
-    }
-  };
 
-  Pace.on("done",function(){
-    console.log("読込完了");
-  });
   var scrollMenu = function() {
         var array = {
             '#top': 0,
