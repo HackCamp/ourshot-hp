@@ -1,4 +1,5 @@
 $(function(){
+  mixpanel.track("View page");
   paceOptions = {
     ajax: false,
     document: false,
@@ -57,8 +58,6 @@ $(function(){
             }
         });
     });
-
-
 
    $('a[href^=#]').click(function() {
      var speed = 400;
