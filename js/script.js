@@ -10,10 +10,9 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-$(".ytp-button").on("click", function(){
+$('.ytp-button').click(function(){
 　　mixpanel.track("Play video");
   });
-
 
   var scrollMenu = function() {
         var array = {
