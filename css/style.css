@@ -206,17 +206,6 @@ a span {
  }
 }
 
- .scroll{
-   position: absolute;
-   bottom: 20px;
-   left: 50%;
-   z-index: 2;
-   display: inline-block;
-   -webkit-transform: translate(0, -50%);
-   transform: translate(0, -50%);
-   text-decoration: none;
-   display: block;
- }
 
 
  .shadow {
@@ -303,13 +292,14 @@ a span {
    padding-bottom: 10px;
    color: white;
  }
-
+ .responsive-menu {
+   display: none;
+ }
  .nav ul {
      position: absolute;
      right: 0;
      bottom: 0;
      font-size: 14px;
-
  }
  .nav li {
    float: left;

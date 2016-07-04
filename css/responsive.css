@@ -63,10 +63,13 @@
   .header-title {
     padding:0 10px;
   }
-  .header-right {
+  #top-navigation {
     display: none;
   }
 
+  .responsive-menu {
+    display:block
+  }
   /*--- top ---*/
   #top {
     height:500px

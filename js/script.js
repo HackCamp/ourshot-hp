@@ -71,6 +71,10 @@ $("#YouTube").on("click", function(){
      return false;
     });
 
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+
    $('.faq-list-item').click(function() {
     var $answer = $(this).children('.answer');
     if($answer.hasClass('open')) {
