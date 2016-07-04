@@ -243,6 +243,7 @@ a span {
 }
 .btn:hover {
    background-color: #AB3F27;
+   cursor: pointer;
    box-shadow: 0 3px 0 #6B2718;
 }
 .btn:active {
