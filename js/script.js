@@ -11,13 +11,13 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-function onYouTubePlayerReady(bQllTXHAACM) {
+function onYouTubePlayerReady('bQllTXHAACM') {
    ytplayer = document.getElementById("myytplayer");
    ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
 }
 
 function onytplayerStateChange(newState) {
-   if (newState === "playing") { 
+   if (newState === "playing") {
       mixpanel.track("Play video");
    } else {
       mixpanel.track("Stop video");
