@@ -10,11 +10,11 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-$("#YouTube").on("click", function(){
+$('#YouTube').on("click", function(){
 　　mixpanel.track("Play video");
   });
 
-$('.footer_logo').click(function(){
+$('#hc-logo').click(function(){
   mixpanel.track("Click HackCamp Logo");
 });
 
