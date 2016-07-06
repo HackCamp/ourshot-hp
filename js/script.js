@@ -11,19 +11,6 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-function onYouTubePlayerReady('bQllTXHAACM') {
-   ytplayer = document.getElementById("myytplayer");
-   ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
-}
-
-function onytplayerStateChange(newState) {
-   if (newState === "playing") {
-      mixpanel.track("Play video");
-   } else {
-      mixpanel.track("Stop video");
-   }
-}
-
 $('#hc-logo').click(function(){
   mixpanel.track("Click HackCamp Logo");
 });
@@ -96,7 +83,6 @@ $('#hc-logo').click(function(){
       $answer.slideUp();
       $(this).find('span').text('▼');
     } else {
-      mixpanel.track("Open faq");
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
