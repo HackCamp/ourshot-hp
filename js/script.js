@@ -86,6 +86,7 @@ $('#hc-logo').click(function(){
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
+      mixpanel.track("Open faq");
     }
   });
 });
