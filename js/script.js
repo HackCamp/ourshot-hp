@@ -10,9 +10,18 @@ $('#bottom-contact-btn').click(function(){
   mixpanel.track("Open contact", {"Contact Location": "Bottom"});
 });
 
-$('#YouTube').on("click", function(){
-　　mixpanel.track("Play video");
-  });
+function onYouTubePlayerReady(playerId) {
+   ytplayer = document.getElementById("myytplayer");
+   ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+}
+
+function onytplayerStateChange(newState) {
+   if (newState === "playing") { // don't know how newState looks like
+      mixpanel.track("Play video");
+   } else {
+      mixpanel.track("Stop video");
+   }
+}
 
 $('#hc-logo').click(function(){
   mixpanel.track("Click HackCamp Logo");
