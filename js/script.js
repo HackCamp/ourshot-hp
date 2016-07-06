@@ -14,6 +14,10 @@ $("#YouTube").on("click", function(){
 　　mixpanel.track("Play video");
   });
 
+$('.footer_logo').click(function(){
+  mixpanel.track("Click HackCamp Logo");
+});
+
 
   var scrollMenu = function() {
         var array = {
