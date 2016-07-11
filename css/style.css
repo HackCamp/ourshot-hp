@@ -116,10 +116,10 @@ body {
   background: #48dabf;
   position: fixed;
   z-index: 2000;
-  top: 0;
+  top: -5;
   right: 100%;
   width: 100%;
-  height: 2px;
+  height: 5px;
 }
 
 .pace .pace-progress-inner {
