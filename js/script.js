@@ -15,6 +15,10 @@ $('#hc-logo').click(function(){
   mixpanel.track("Click HackCamp Logo");
 });
 
+$('#bottom-contact-btn').click(function(){
+  mixpanel.track("Open faq");
+  });
+
 
   var scrollMenu = function() {
         var array = {
@@ -86,7 +90,15 @@ $('#hc-logo').click(function(){
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
-      mixpanel.track("Open faq");
+      if($(this).children().hasClass('q1')) {
+        mixpanel.track("Open faq", {"ID": "q1"});
+      } else if ($(this).children().hasClass('q2')) {
+        mixpanel.track("Open faq", {"ID": "q2"});
+      } else if ($(this).children().hasClass('q3')) {
+        mixpanel.track("Open faq", {"ID": "q3"});
+      } else if ($(this).children().hasClass('q4')) {
+        mixpanel.track("Open faq", {"ID": "q4"});
+      };
     }
   });
 });
