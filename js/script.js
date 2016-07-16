@@ -90,13 +90,13 @@ $('#bottom-contact-btn').click(function(){
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
-      if($(this).children().hasClass('q1')) {
+      if($answer.children().hasClass('q1')) {
         mixpanel.track("Open faq", {"ID": "q1"});
-      } else if ($(this).children().hasClass('q2')) {
+      } else if ($answer.children().hasClass('q2')) {
         mixpanel.track("Open faq", {"ID": "q2"});
-      } else if ($(this).children().hasClass('q3')) {
+      } else if ($answer.children().hasClass('q3')) {
         mixpanel.track("Open faq", {"ID": "q3"});
-      } else if ($(this).children().hasClass('q4')) {
+      } else if ($answer.children().hasClass('q4')) {
         mixpanel.track("Open faq", {"ID": "q4"});
       };
     }
