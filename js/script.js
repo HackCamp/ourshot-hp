@@ -89,13 +89,13 @@ $('#hc-logo').click(function(){
       $(this).find('span').text('▲');
       if($idname == 'q1') {
         mixpanel.track("Open faq", {"ID": "q1"});
-      } else if ($idname == 'q2')) {
+      } else if ($idname == 'q2') {
         mixpanel.track("Open faq", {"ID": "q2"});
-      } else if ($idname == 'q3')) {
+      } else if ($idname == 'q3') {
         mixpanel.track("Open faq", {"ID": "q3"});
-      } else if ($idname == 'q4')) {
+      } else if ($idname == 'q4') {
         mixpanel.track("Open faq", {"ID": "q4"});
-      } else if ($idname == 'q5')) {
+      } else if ($idname == 'q5') {
         mixpanel.track("Open faq", {"ID": "q5"});
       };
     }
