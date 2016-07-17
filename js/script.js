@@ -78,7 +78,6 @@ $('#hc-logo').click(function(){
 
    $('.faq-list-item').click(function() {
     var $answer = $(this).children('.answer');
-    var $idname = $answer.attr("id");
     if($answer.hasClass('open')) {
       $answer.removeClass('open');
       $answer.slideUp();
@@ -87,16 +86,14 @@ $('#hc-logo').click(function(){
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
-      if($idname == 'q1') {
+      if($answer.attr('q1')) {
         mixpanel.track("Open faq", {"ID": "q1"});
-      } else if ($idname == 'q2') {
+      } else if ($answer.attr('q2')) {
         mixpanel.track("Open faq", {"ID": "q2"});
-      } else if ($idname == 'q3') {
-        mixpanel.track("Open faq", {"ID": "q3"});
-      } else if ($idname == 'q4') {
-        mixpanel.track("Open faq", {"ID": "q4"});
-      } else if ($idname == 'q5') {
-        mixpanel.track("Open faq", {"ID": "q5"});
+      } else if ($answer.attr('q3')) {
+        mixpanel.("Open faq", {"ID": "q3"});
+      } else if ($answer.attr('q4')) {
+        mixpanel.track("Open faq", {"ID": "q1"});
       };
     }
   });
