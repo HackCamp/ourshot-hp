@@ -15,10 +15,6 @@ $('#hc-logo').click(function(){
   mixpanel.track("Click HackCamp Logo");
 });
 
-$('#bottom-contact-btn').click(function(){
-  mixpanel.track("Open faq");
-  });
-
 
   var scrollMenu = function() {
         var array = {
@@ -97,7 +93,7 @@ $('#bottom-contact-btn').click(function(){
       } else if ($answer.children().hasClass('q3')) {
         mixpanel.("Open faq", {"ID": "q3"});
       } else if ($answer.children().hasClass('q4')) {
-        mixpanel.track("Open faq", {"ID": "q4"});
+        mixpanel.track("Open faq", {"ID": "q1"});
       };
     }
   });
