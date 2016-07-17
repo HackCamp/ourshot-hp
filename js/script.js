@@ -95,7 +95,7 @@ $('#bottom-contact-btn').click(function(){
       } else if ($answer.children().hasClass('q2')) {
         mixpanel.track("Open faq", {"ID": "q2"});
       } else if ($answer.children().hasClass('q3')) {
-        mixpanel.track("Open faq", {"ID": "q3"});
+        mixpanel.("Open faq", {"ID": "q3"});
       } else if ($answer.children().hasClass('q4')) {
         mixpanel.track("Open faq", {"ID": "q4"});
       };
