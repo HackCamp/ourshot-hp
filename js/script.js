@@ -86,14 +86,14 @@ $('#hc-logo').click(function(){
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
-      if($answer.attr('q1')) {
+      if($answer.children().hasClass('q1')) {
         mixpanel.track("Open faq", {"ID": "q1"});
-      } else if ($answer.attr('q2')) {
+      } else if ($answer.children().hasClass('q2')) {
         mixpanel.track("Open faq", {"ID": "q2"});
-      } else if ($answer.attr('q3')) {
-        mixpanel.("Open faq", {"ID": "q3"});
-      } else if ($answer.attr('q4')) {
-        mixpanel.track("Open faq", {"ID": "q1"});
+      } else if ($answer.children().hasClass('q3')) {
+        mixpanel.track("Open faq", {"ID": "q3"});
+      } else if ($answer.children().hasClass('q4')) {
+        mixpanel.track("Open faq", {"ID": "q4"});
       };
     }
   });
