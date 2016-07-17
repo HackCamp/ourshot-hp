@@ -86,13 +86,13 @@ $('#hc-logo').click(function(){
       $answer.addClass('open');
       $answer.slideDown();
       $(this).find('span').text('▲');
-      if($answer.children().hasClass('q1')) {
+      if($answer.attr('q1')) {
         mixpanel.track("Open faq", {"ID": "q1"});
-      } else if ($answer.children().hasClass('q2')) {
+      } else if ($answer.attr('q2')) {
         mixpanel.track("Open faq", {"ID": "q2"});
-      } else if ($answer.children().hasClass('q3')) {
+      } else if ($answer.attr('q3')) {
         mixpanel.track("Open faq", {"ID": "q3"});
-      } else if ($answer.children().hasClass('q4')) {
+      } else if ($answer.attr('q4')) {
         mixpanel.track("Open faq", {"ID": "q4"});
       };
     }
