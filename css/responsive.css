@@ -25,6 +25,9 @@
     -webkit-filter: brightness(70%);
     filter:brightness(70%);
   }
+  .top-contact {
+    bottom: 40px;
+  }
   /*--- about ---*/
   /*--- features ---*/
   .feature-1 {
@@ -77,6 +80,10 @@
 
   .inner-bg {
     padding: 150px 0px 30px;
+  }
+
+  .top-contact {
+    bottom: 150px;
   }
 
   #top p{
@@ -169,6 +176,10 @@
   .main_footer {
     height: 140px;
   }
+  .main_footer .container {
+    padding: 1.5rem 0;
+  }
+
   .main_footer .footer_logo_ourshot {
     margin: 0 auto;
   }
