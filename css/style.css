@@ -637,10 +637,15 @@ a span {
    position: relative;
    font-family: 'Tahoma';
  }
- .service-content {
+ .contact-wrapper .service-content {
    padding-bottom: 25px;
    font-size: 1.6rem;
+   text-align:center;
  }
+ .button-content-bottom  {
+   text-align: center;
+ }
+
 
    /*------  Footer  --------*/
   .main_footer {
