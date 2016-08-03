@@ -376,10 +376,21 @@ a span {
  }
 
  .inner-bg {
+     position: reletive;
      padding: 190px 0px 240px;
  }
 
  .top-contact {
+   position: absolute;
+   bottom: 75px;
+   right: 35px;
+ }
+
+ .service-content {
+   text-align: right;
+ }
+
+ .button-content {
    text-align: right;
  }
  #top h1{
