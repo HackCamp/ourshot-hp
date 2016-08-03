@@ -173,6 +173,11 @@
     font-size: 1.0rem;
   }
 
+  .bottom-service-content {
+    padding-bottom: 25px;
+    font-size: 0.7rem;
+  }
+
   /*--- footer ---*/
   .main_footer {
     height: 140px;
