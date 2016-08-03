@@ -26,12 +26,12 @@
     filter:brightness(70%);
   }
  .inner-bg {
-      position: reletive;
+   position: reletive;
   }
 
   .top-contact {
     position: absolute;
-    bottom: 0px;
+    bottom: 65px;
   }
   /*--- about ---*/
   /*--- features ---*/
@@ -88,7 +88,7 @@
   }
 
   .top-contact {
-    bottom: 150px;
+    bottom: 185px;
   }
 
   #top p{
@@ -180,7 +180,7 @@
 
   .bottom-service-content {
     padding-bottom: 25px;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
 
   /*--- footer ---*/
