@@ -1,6 +1,9 @@
 /* for Tablet */
 @media screen and (max-width: 1000px ) {
   /*--- top ---*/
+  #top {
+     position: relative;
+  }
   #top h1{
      font-size: 3.5rem;
   }
@@ -25,13 +28,10 @@
     -webkit-filter: brightness(70%);
     filter:brightness(70%);
   }
- .inner-bg {
-   position: reletive;
-  }
 
   .top-contact {
     position: absolute;
-    bottom: 65px;
+    bottom: 35px;
   }
   /*--- about ---*/
   /*--- features ---*/
@@ -80,7 +80,8 @@
   }
   /*--- top ---*/
   #top {
-    height:500px
+    position: relative;
+    height:500px;
   }
 
   .inner-bg {
@@ -89,6 +90,7 @@
 
   .top-contact {
     bottom: 30px;
+    position: absolute;
   }
 
   #top p{
