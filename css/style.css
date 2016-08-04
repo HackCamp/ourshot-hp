@@ -642,6 +642,9 @@ a span {
    font-size: 1.6rem;
    text-align:center;
  }
+ .bottom-service-content {
+   padding-bottom: 25px;
+ }
  .button-content-bottom  {
    text-align: center;
  }
