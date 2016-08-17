@@ -382,7 +382,7 @@ a span {
 
  .top-contact {
    position: absolute;
-   bottom: 70px;
+   bottom: 85px;
    right: 35px;
  }
 
@@ -498,7 +498,7 @@ a span {
   position: absolute;
   height: 250px;
   width: 250%;
-  bottom: -200px;
+  bottom: -210px;
   left: -100%;
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
@@ -548,7 +548,7 @@ a span {
   position: absolute;
   height: 250px;
   width: 250%;
-  bottom: -200px;
+  bottom: -210px;
   left: -100%;
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
