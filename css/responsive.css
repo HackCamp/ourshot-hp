@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+  .top-contact {
+    bottom: 400px;
+    position: absolute;
+  }
+}
 /* for Tablet */
 @media screen and (max-width: 1000px ) {
   /*--- top ---*/
