@@ -1,16 +1,16 @@
-/* Large devices: Desktops (≥1200px) */
-@media (min-width: 1200px) {
+/* Large devices: Desktops  */
+@media (min-width: 1400px) {
   .top-contact {
     bottom: 344px;
   }
 }
 
-/* Medium devices: Desktops (≥992px) */
-@media (min-width: 1000px) and (max-width: 1199px) {
-  .top-contact {
-    bottom:
-  }
 
+/* Medium devices: Desktops  */
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .top-contact {
+    bottom: 40px;
+  }
 }
 
 
@@ -22,6 +22,9 @@
   }
   #top h1{
      font-size: 3.5rem;
+  }
+  #top p{
+    font-size: 2.2rem;
   }
   video {
     display:none;
