@@ -9,9 +9,8 @@
 /* Medium devices: Desktops  */
 @media screen and (min-width: 1000px) and (max-width: 1399px) {
   .top-contact {
-    bottom: 40px;
+    bottom: 75px;
   }
-}
 
 
 /* for Tablet */
