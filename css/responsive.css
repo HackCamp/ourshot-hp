@@ -1,5 +1,5 @@
 /* Large devices: Desktops  */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 3000px) {
   .top-contact {
     bottom: 344px;
   }
