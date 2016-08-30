@@ -1,5 +1,5 @@
 /* Large devices: Desktops  */
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .top-contact {
     bottom: 344px;
   }
@@ -7,7 +7,7 @@
 
 
 /* Medium devices: Desktops  */
-@media (min-width: 1000px) and (max-width: 1399px) {
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
   .top-contact {
     bottom: 40px;
   }
@@ -15,7 +15,7 @@
 
 
 /* for Tablet */
-@media screen and (max-width: 999px ) {
+@media screen and (max-width: 999px) {
   /*--- top ---*/
   #top {
      position: relative;
