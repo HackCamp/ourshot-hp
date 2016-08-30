@@ -1,11 +1,21 @@
-@media all and (max-width: 1001px) {
+/* Large devices: Desktops (≥1200px) */
+@media (min-width: 1200px) {
   .top-contact {
     bottom: 344px;
-    position: absolute;
   }
 }
+
+/* Medium devices: Desktops (≥992px) */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .top-contact {
+    bottom:
+  }
+
+}
+
+
 /* for Tablet */
-@media screen and (max-width: 1000px ) {
+@media screen and (max-width: 999px ) {
   /*--- top ---*/
   #top {
      position: relative;
