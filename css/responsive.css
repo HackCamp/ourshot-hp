@@ -1,17 +1,3 @@
-/* Large devices: Desktops  */
-@media screen and (max-width: 3000px) {
-  .top-contact {
-    bottom: 354px;
-  }
-}
-
-
-/* Medium devices: Desktops  */
-@media screen and (min-width: 1000px) and (max-width: 1399px) {
-  .top-contact {
-    bottom: 75px;
-  }
-}
 
 /* for Tablet */
 @media screen and (max-width: 999px) {
@@ -198,10 +184,6 @@
     font-size: 1.0rem;
   }
 
-  .bottom-service-content {
-    padding-bottom: 25px;
-    font-size: 1.2rem;
-  }
 
   /*--- footer ---*/
   .main_footer {
