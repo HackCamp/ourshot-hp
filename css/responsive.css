@@ -1,6 +1,15 @@
 
 /* for Tablet */
 @media screen and (max-width: 999px) {
+  /*--- header ---*/
+
+  #top-navigation {
+    display: none;
+  }
+  .responsive-menu {
+    display:block
+  }
+  
   /*--- top ---*/
   #top {
      position: relative;
@@ -75,13 +84,7 @@
   .header-title {
     padding:0 10px;
   }
-  #top-navigation {
-    display: none;
-  }
 
-  .responsive-menu {
-    display:block
-  }
   /*--- top ---*/
   #top {
     position: relative;
