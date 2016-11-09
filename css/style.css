@@ -654,20 +654,19 @@ a span {
       text-align: center;
       color: white;
       background-color: #00A690;
-      height: 200px;
+      height: 140px;
   }
 
   .main_footer .container {
-    padding: 2.0rem 0;
+    padding: 1.0rem 0;
   }
 
   .main_footer .footer_logo_ourshot {
     margin: 0 auto;
   }
   .main_footer .footer_logo_ourshot img{
-    display: none;
     padding: 10px;
-    width: 340px;
+    width: 200px;
   }
   .main_footer .footer_logo {
       margin-bottom: 1rem;
