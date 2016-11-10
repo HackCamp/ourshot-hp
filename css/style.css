@@ -624,6 +624,7 @@ a span {
 
  #contact {
    color: white;
+   height: 70vh;
  }
  .contact-wrapper{
    padding: 30px 0 40px;
@@ -632,6 +633,7 @@ a span {
  }
  .service-title {
    padding-bottom: 10px;
+   margin: 60px 0 30px;
    letter-spacing: 4px;
    font-size: 2.0rem;
    color: #fff;
